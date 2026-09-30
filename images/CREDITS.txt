@@ -1,0 +1,90 @@
+IMAGE CREDITS
+==============
+
+IMPORTANT
+---------
+Every photograph in this folder is a Creative Commons (CC0 / CC BY / CC BY-SA /
+public domain) picture downloaded from Wikimedia Commons. Several were taken at
+universities inside Osun State and neighbouring states so the site looks right
+while you build it.
+
+They are STAND-INS. They are NOT photographs of the University of Ifewara.
+Replace every file in this folder with your own photographs of the real campus
+before publishing. If you replace the images, delete this file.
+
+The attribution below is required by the CC BY and CC BY-SA licences.
+
+SOURCES
+-------
+All files retrieved from Wikimedia Commons (https://commons.wikimedia.org)
+using the MediaWiki API, then resized to 1600px wide.
+
+FILE                     SOURCE FILE ON WIKIMEDIA COMMONS            AUTHOR              LICENCE
+--------------------------------------------------------------------------------------
+hero-campus.jpg          A view of Obafemi Awolowo University        AnonymousAd         CC0
+                         campus gate.jpg
+main-gate.jpg            Approach view towards the Obafemi           Eminence190         CC0
+                         Awolowo University main entrance.jpg
+admin-block.jpg          Administrative building facade at          Eminence190         CC0
+                         Obafemi Awolowo University.jpg
+senate-building.jpg      Angled exterior view of the Senate         Eminence190         CC0
+                         Building at Obafemi Awolowo University.jpg
+campus-view.jpg          Administrative building and campus         Eminence190         CC0
+                         grounds view from University Hall.jpg
+library-books.jpg        A close view of the Hezekiah                Eminence190         CC0
+                         Oluwasanmi Library at Obafemi Awolowo
+                         University.jpg
+library-nigeria.jpg      A section in Kashim Ibrahim Library,       Maamamadu           CC BY 4.0
+                         ABU Zaria.jpg
+auditorium.jpg           Afe Babalola Auditorium, Unilag.jpg       Abiolakintrunde     CC BY-SA 4.0
+amphitheatre.jpg         Approach ramp and front facade of the      Eminence190         CC0
+                         Amphitheater at OAU.jpg
+campus-dam.jpg           Calm River Scene Near OAU Dam.jpg           Eminence190         CC0
+students-union.jpg       Campus activity at the Student Union       Eminence190         CC0
+                         Board car park and second bus stop.jpg
+engineering-lab.jpg      AI Studio, Obafemi Awolowo                 BigDareLibrary      CC0
+                         University.jpg
+engineering2.jpg         Faculty of Engineering, University         Official alade      CC BY-SA 4.0
+                         of Lagos.jpg
+it-campus.jpg            CITS, University of Lagos.jpg              Abiolakintrunde     CC BY-SA 4.0
+research-office.jpg      Research and innovation office,            Official alade      CC BY-SA 4.0
+                         University of Lagos.jpg
+science2.jpg             Faculty of Science, University of          Official alade      CC BY-SA 4.0
+                         Lagos.jpg
+sport-center.jpg         Sport center, University of Lagos.jpg      Official alade      CC BY-SA 4.0
+agri-solar.jpg           A Multi-purpose Solar Dryer.jpg            Zmu'az4Z            CC BY 4.0
+agriculture3.jpg         Cooking space at the farm.jpg              Keyz abdulsalaam    CC BY-SA 4.0
+agriculture4.jpg         Aerobics session by dettol cool at         Godstime Elijah     CC BY-SA 4.0
+                         unilorin stadium 27.jpg
+agriculture.jpg          FARMERS GOV - ALBA - Agricultural         USDAgov             Public domain
+                         Land Based Training Association.jpg
+agriculture2.jpg         BLM Wyoming and Partners Grow Seed         mypubliclands       Public domain
+                         at Welch Ranch.jpg
+environment.jpg          Rivers' Embrace - A Verdant Journey         Joma433             CC BY-SA 4.0
+                         through Kogi State.jpg
+science-lab.jpg          Analytical Chemistry Common Laboratory     Khanahmedsam        CC BY-SA 4.0
+                         For III semester students, Aligarh
+                         Muslim University.jpg
+research-lab.jpg         CSIRO scientist Dr Mohinudeen Faiz          Chris Taylor        CC BY 3.0
+                         analyses a coal sample.jpg
+computer-lab.jpg         De La Salle University ICTC laboratory     UndueMarmot         CC0
+                         room 203.jpg
+lecture-hall.jpg         Grace Knox Lecture Hall, University        Breadchastick       CC BY 3.0
+                         at Buffalo.jpg
+graduation.jpg           AUN Students in Graduation Gowns.jpg       Thepresido           CC BY-SA 4.0
+students-campus.jpg      Students walking on campus.jpg             Tulane Public        CC BY 2.0
+                                                                  Relations
+library.jpg              Graz University-Library                    Dr. Marcus Gossler  CC BY-SA 3.0
+                         reading-room.jpg
+
+LICENCE URLS
+------------
+CC0 .............................. https://creativecommons.org/publicdomain/zero/1.0/
+CC BY 2.0 ........................ https://creativecommons.org/licenses/by/2.0/
+CC BY 3.0 ........................ https://creativecommons.org/licenses/by/3.0/
+CC BY 4.0 ........................ https://creativecommons.org/licenses/by/4.0/
+CC BY-SA 3.0 ..................... https://creativecommons.org/licenses/by-sa/3.0/
+CC BY-SA 4.0 ..................... https://creativecommons.org/licenses/by-sa/4.0/
+Public domain ................... https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA
+
+logo.svg is original work created for this project (no third-party licence).

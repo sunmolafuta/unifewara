@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Programmes | University of Ifewara, Osun State, Nigeria</title>
+<meta name="description" content="Search the full academic programme catalogue of the University of Ifewara: undergraduate, postgraduate and short courses across five schools and twenty departments.">
+<meta name="theme-color" content="#06281c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-items">
+            <span><i class="fa-solid fa-location-dot"></i> Ifewara Campus, Osun State, Nigeria</span>
+            <span><i class="fa-solid fa-phone"></i> +234 803 445 5800</span>
+            <span><i class="fa-solid fa-envelope"></i> info@unifewara.edu.ng</span>
+        </div>
+        <div class="topbar-links">
+            <a href="structure.html">Staff Directory</a>
+            <a href="campus.html">Campus Life</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="#portal">Student Portal</a>
+        </div>
+    </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="University of Ifewara crest">
+            <span class="brand-text">
+                <strong>UNIVERSITY OF IFEWARA</strong>
+                <small>Osun State &middot; Nigeria</small>
+            </span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schools.html">Schools</a>
+            <a href="programmes.html" class="active">Programmes</a>
+            <a href="structure.html">Structure</a>
+            <a href="staff.html">Staff</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="campus.html">Campus</a>
+            <a href="contact.html">Contact</a>
+            <a href="portal/login.html" class="nav-portal"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+        </nav>
+        <div class="header-cta">
+                        <a href="portal/login.html" class="btn btn-portal btn-sm"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+<a href="admissions.html" class="btn btn-gold btn-sm">Apply Now</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/it-campus.jpg" alt="Information Technology campus">
+        </div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Academic Programmes</span>
+            </nav>
+            <h1>Academic Programme Catalogue</h1>
+            <p>
+                Filter the complete catalogue by keyword, school, department, level and duration.
+                Each entry shows the awarding degree, the focus of the programme and available seats.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ PROGRAMME SEARCH ============ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="notice">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>
+                    Programme lists are published by the Directorate of Academic Planning at the start of
+                    each session. Always confirm your choice of programme and current departmental
+                    cut-off before applying.
+                </p>
+                <a href="admissions.html" class="btn btn-green btn-sm">Admission Requirements</a>
+            </div>
+
+            <div class="filter-bar">
+                <form id="programmeForm" class="filter-row">
+                    <div class="filter-field" style="flex:2 1 320px;">
+                        <label for="progSearch">Search programmes</label>
+                        <input type="search" id="progSearch" placeholder="e.g. Engineering, Data Science, Soil, Security">
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="progLevel">Level</label>
+                        <select id="progLevel">
+                            <option value="">All levels</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="progSchool">School</label>
+                        <select id="progSchool">
+                            <option value="">All schools</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="progDept">Department</label>
+                        <select id="progDept">
+                            <option value="">All departments</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="progDuration">Duration</label>
+                        <select id="progDuration">
+                            <option value="">Any duration</option>
+                            <option value="short">6 months or less</option>
+                            <option value="five">5 years</option>
+                            <option value="two">2 years</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <button type="submit" class="btn btn-green btn-block">
+                            <i class="fa-solid fa-magnifying-glass"></i> Filter
+                        </button>
+                    </div>
+                </form>
+
+                <p class="result-count" id="progCount" style="margin:18px 0 0;"></p>
+                <button type="button" id="progReset" class="btn btn-outline btn-sm" style="margin-top:12px;" hidden>
+                    <i class="fa-solid fa-rotate-left"></i> Clear filters
+                </button>
+            </div>
+
+            <div class="grid grid-3" id="programmeList"></div>
+        </div>
+    </section>
+
+    <!-- ============ PROGRAMME STRUCTURE ============ -->
+    <section class="section green">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow light">How Programmes Are Structured</p>
+                <h2>Undergraduate, Postgraduate and Short Courses</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <span class="badge dark">Level 1</span>
+                    <h3 style="margin-top:12px;">Undergraduate (100&ndash;400 Levels)</h3>
+                    <p>
+                        Five-year programmes of eight semesters, comprising General Education courses,
+                        departmental core courses, electives, a compulsory SIWES attachment in the
+                        fourth year and a final-year project or design.
+                    </p>
+                    <ul class="tick-list" style="margin-top:14px;">
+                        <li>Admission by UTME, Direct Entry or Pre-Degree</li>
+                        <li>Award: B.Sc., B.Eng., B.Tech., B.Agric.</li>
+                        <li>Minimum CGPA for graduation: 2.00</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="badge dark">Level 2</span>
+                    <h3 style="margin-top:12px;">Postgraduate (500&ndash;600 Levels)</h3>
+                    <p>
+                        M.Sc., M.Eng. and M.Tech. taught programmes run for four semesters, with
+                        coursework, examinations and a research project. Ph.D. candidates enrol in a
+                        residency programme of six to ten semesters.
+                    </p>
+                    <ul class="tick-list" style="margin-top:14px;">
+                        <li>Admission with a second-class upper degree</li>
+                        <li>Aptitude test and oral interview required</li>
+                        <li>Award: M.Sc., M.Eng. or Ph.D.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="badge dark">Level 3</span>
+                    <h3 style="margin-top:12px;">Short Courses &amp; Certificates</h3>
+                    <p>
+                        Professional diplomas and certificates of three to six months for graduates,
+                        teachers, artisans, public servants and SME operators. Delivered in the
+                        evenings and on weekends.
+                    </p>
+                    <ul class="tick-list" style="margin-top:14px;">
+                        <li>No JAMB requirement</li>
+                        <li>Recognised by SON and relevant professional bodies</li>
+                        <li>Certificate awarded on completion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DURATION GUIDE ============ -->
+    <section class="section">
+        <div class="container split">
+            <div>
+                <p class="eyebrow">Degree Structure</p>
+                <h2>How Long Does Each Programme Take?</h2>
+                <table style="margin-top:22px;min-width:auto;">
+                    <thead>
+                        <tr><th>Award</th><th>Duration</th><th>Entry route</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>B.Sc. / B.Eng. / B.Tech. / B.Agric.</strong></td><td>5 years (8 semesters)</td><td>UTME, Direct Entry</td></tr>
+                        <tr><td><strong>M.Sc. / M.Eng. / M.Tech.</strong></td><td>2 years (4 semesters)</td><td>Bachelor with 2:1 or above</td></tr>
+                        <tr><td><strong>Ph.D.</strong></td><td>3 to 5 years</td><td>Master's degree plus research proposal</td></tr>
+                        <tr><td><strong>Postgraduate Diploma</strong></td><td>1 year (2 semesters)</td><td>Bachelor with 2:2 or above</td></tr>
+                        <tr><td><strong>Professional Diploma</strong></td><td>6 months</td><td>Bachelor or OND/HND with experience</td></tr>
+                        <tr><td><strong>Certificate Programme</strong></td><td>3 months</td><td>Open to all qualified applicants</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="split-media reveal">
+                <img src="images/research-office.jpg" alt="Academic staff at work">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SCHOOL SHORTCUT ============ -->
+    <section class="section cream">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Browse by School</p>
+                <h2>Programmes by Academic School</h2>
+            </div>
+            <div class="grid grid-3" id="homeSchools"></div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <h2>Found the Programme You Want?</h2>
+            <p>Check the entry requirements for your chosen route and start your application online.</p>
+            <div class="hero-actions">
+                <a href="admissions.html" class="btn btn-gold">Start Your Application</a>
+                <a href="contact.html" class="btn btn-ghost">Ask an Adviser</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <img src="images/logo.svg" alt="">
+                    <span>
+                        <strong>University of Ifewara</strong>
+                        <small>Osun State &middot; Nigeria</small>
+                    </span>
+                </div>
+                <p>A university of technology driving innovation, industrialisation and sustainable development in Africa.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Schools</h4>
+                <a href="schools.html#scs">School of Sciences</a>
+                <a href="schools.html#sag">School of Agriculture</a>
+                <a href="schools.html#sit">School of Information Technology</a>
+                <a href="schools.html#sen">School of Environmental Studies</a>
+                <a href="schools.html#seg">School of Engineering</a>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="about.html">About the University</a>
+                <a href="programmes.html">Academic Programmes</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="structure.html">Administrative Structure</a>
+                <a href="staff.html">Staff Directory</a>
+                <a href="campus.html">Campus &amp; Facilities</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div>
+                <h4>Students</h4>
+                <a href="portal/login.html">Student Portal</a>
+                <a href="portal/dashboard.html">Course Registration</a>
+                <a href="admissions.html#fees">Fees and Payments</a>
+                <a href="portal/login.html#track">Track Application</a>
+                <a href="campus.html">Accommodation</a>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Ifewara Campus,<br>Osun State, Nigeria</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span>+234 803 445 5800</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span>info@unifewara.edu.ng</span></li>
+                    <li><i class="fa-solid fa-user-graduate"></i><span>admissions@unifewara.edu.ng</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2026</span> University of Ifewara, Osun State, Nigeria. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+                <a href="#">Terms of Use</a> &nbsp;|&nbsp;
+                <a href="#">Accessibility</a> &nbsp;|&nbsp;
+                <a href="#">NUC Accredited</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="whatsapp" id="whatsappBtn" aria-label="Enquire on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

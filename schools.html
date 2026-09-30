@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schools and Departments | University of Ifewara, Osun State, Nigeria</title>
+<meta name="description" content="Five schools and twenty departments at the University of Ifewara: Sciences, Agriculture, Information Technology, Environmental Studies and Engineering.">
+<meta name="theme-color" content="#06281c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-items">
+            <span><i class="fa-solid fa-location-dot"></i> Ifewara Campus, Osun State, Nigeria</span>
+            <span><i class="fa-solid fa-phone"></i> +234 803 445 5800</span>
+            <span><i class="fa-solid fa-envelope"></i> info@unifewara.edu.ng</span>
+        </div>
+        <div class="topbar-links">
+            <a href="structure.html">Staff Directory</a>
+            <a href="campus.html">Campus Life</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="#portal">Student Portal</a>
+        </div>
+    </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="University of Ifewara crest">
+            <span class="brand-text">
+                <strong>UNIVERSITY OF IFEWARA</strong>
+                <small>Osun State &middot; Nigeria</small>
+            </span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schools.html" class="active">Schools</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="structure.html">Structure</a>
+            <a href="staff.html">Staff</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="campus.html">Campus</a>
+            <a href="contact.html">Contact</a>
+            <a href="portal/login.html" class="nav-portal"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+        </nav>
+        <div class="header-cta">
+                        <a href="portal/login.html" class="btn btn-portal btn-sm"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+<a href="admissions.html" class="btn btn-gold btn-sm">Apply Now</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/library-books.jpg" alt="University of Ifewara library">
+        </div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Schools &amp; Departments</span>
+            </nav>
+            <h1>Schools and Departments</h1>
+            <p>
+                Five schools, twenty departments, each led by a dean or head of department and
+                supported by academic staff, laboratories and technical units.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ OVERVIEW CARDS ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Academic Organisation</p>
+                <h2>Five Schools of Technology</h2>
+                <p>
+                    The University is organised into five schools. Every school runs at least four
+                    departments, each with its own academic staff, research units and programme
+                    portfolio.
+                </p>
+            </div>
+            <div class="grid grid-3" id="homeSchools"></div>
+        </div>
+    </section>
+
+    <!-- ============ SCHOOL DETAILS ============ -->
+    <section class="section cream">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Department by Department</p>
+                <h2>Detailed School Profiles</h2>
+                <p>
+                    Each profile lists the dean, the departments, the head of each department and
+                    the number of staff and programmes available.
+                </p>
+            </div>
+
+            <div id="schoolDetailWrap"></div>
+        </div>
+    </section>
+
+    <!-- ============ CROSS-CUTTING ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">How We Operate</p>
+                <h2>Teaching, Research and Community Service</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <article class="card reveal">
+                    <div class="icon-circle"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Teaching</h3>
+                    <p>Course delivery supported by laboratories, workshops, field visits, clinical placements and the teaching farm. Continuous improvement is monitored by the Directorate of Quality Assurance.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="icon-circle"><i class="fa-solid fa-flask"></i></div>
+                    <h3>Research</h3>
+                    <p>Research clusters in solar energy, cybersecurity, food security, water resources, materials and machine learning, funded through TETFUND and industry partners.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="icon-circle"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>Community Service</h3>
+                    <p>Extension services to farmers, water quality testing for communities, free ICT literacy clinics, health outreach and school mentoring programmes.</p>
+                </article>
+            </div>
+
+            <div style="text-align:center;margin-top:44px;" class="hero-actions">
+                <a href="programmes.html" class="btn btn-green">See Programmes by Department</a>
+                <a href="staff.html" class="btn btn-outline">Meet the Academic Staff</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <h2>Choose the School That Fits Your Ambition</h2>
+            <p>Every school at Ifewara offers undergraduate, postgraduate and short-course programmes with clear entry routes.</p>
+            <div class="hero-actions">
+                <a href="programmes.html" class="btn btn-gold">Browse Programmes</a>
+                <a href="admissions.html" class="btn btn-ghost">How to Apply</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <img src="images/logo.svg" alt="">
+                    <span>
+                        <strong>University of Ifewara</strong>
+                        <small>Osun State &middot; Nigeria</small>
+                    </span>
+                </div>
+                <p>A university of technology driving innovation, industrialisation and sustainable development in Africa.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Schools</h4>
+                <a href="schools.html#scs">School of Sciences</a>
+                <a href="schools.html#sag">School of Agriculture</a>
+                <a href="schools.html#sit">School of Information Technology</a>
+                <a href="schools.html#sen">School of Environmental Studies</a>
+                <a href="schools.html#seg">School of Engineering</a>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="about.html">About the University</a>
+                <a href="programmes.html">Academic Programmes</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="structure.html">Administrative Structure</a>
+                <a href="staff.html">Staff Directory</a>
+                <a href="campus.html">Campus &amp; Facilities</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div>
+                <h4>Students</h4>
+                <a href="portal/login.html">Student Portal</a>
+                <a href="portal/dashboard.html">Course Registration</a>
+                <a href="admissions.html#fees">Fees and Payments</a>
+                <a href="portal/login.html#track">Track Application</a>
+                <a href="campus.html">Accommodation</a>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Ifewara Campus,<br>Osun State, Nigeria</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span>+234 803 445 5800</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span>info@unifewara.edu.ng</span></li>
+                    <li><i class="fa-solid fa-user-graduate"></i><span>admissions@unifewara.edu.ng</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2026</span> University of Ifewara, Osun State, Nigeria. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+                <a href="#">Terms of Use</a> &nbsp;|&nbsp;
+                <a href="#">Accessibility</a> &nbsp;|&nbsp;
+                <a href="#">NUC Accredited</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="whatsapp" id="whatsappBtn" aria-label="Enquire on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

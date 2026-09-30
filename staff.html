@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic and Non-Teaching Staff Directory | University of Ifewara, Osun State, Nigeria</title>
+<meta name="description" content="Search the staff directory of the University of Ifewara: academic staff of every department and the non-teaching staff of the directorates, central units, schools and departments.">
+<meta name="theme-color" content="#06281c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-items">
+            <span><i class="fa-solid fa-location-dot"></i> Ifewara Campus, Osun State, Nigeria</span>
+            <span><i class="fa-solid fa-phone"></i> +234 803 445 5800</span>
+            <span><i class="fa-solid fa-envelope"></i> info@unifewara.edu.ng</span>
+        </div>
+        <div class="topbar-links">
+            <a href="structure.html">Staff Directory</a>
+            <a href="campus.html">Campus Life</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="#portal">Student Portal</a>
+        </div>
+    </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="University of Ifewara crest">
+            <span class="brand-text">
+                <strong>UNIVERSITY OF IFEWARA</strong>
+                <small>Osun State &middot; Nigeria</small>
+            </span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schools.html">Schools</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="structure.html">Structure</a>
+            <a href="staff.html" class="active">Staff</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="campus.html">Campus</a>
+            <a href="contact.html">Contact</a>
+            <a href="portal/login.html" class="nav-portal"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+        </nav>
+        <div class="header-cta">
+                        <a href="portal/login.html" class="btn btn-portal btn-sm"><i class="fa-solid fa-user-graduate"></i> Student Portal</a>
+<a href="admissions.html" class="btn btn-gold btn-sm">Apply Now</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/students-campus.jpg" alt="Students on campus">
+        </div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Staff Directory</span>
+            </nav>
+            <h1>Academic and Non-Teaching Staff</h1>
+            <p>
+                The academic staff of every school and department, and the non-teaching staff of the
+                directorates, central units, schools and departments. Search by name, qualification,
+                role or unit.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ COUNTS ============ -->
+    <section class="section green" style="padding:52px 0;">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="stat">
+                    <div class="num" id="statAcademic">0</div>
+                    <div class="lbl">Academic staff</div>
+                    <div class="note">Professors to lecturers</div>
+                </div>
+                <div class="stat">
+                    <div class="num" id="statNonTeaching">0</div>
+                    <div class="lbl">Non-teaching staff</div>
+                    <div class="note">Administrative, technical, support</div>
+                </div>
+                <div class="stat">
+                    <div class="num">5</div>
+                    <div class="lbl">Schools</div>
+                    <div class="note">Each led by a dean</div>
+                </div>
+                <div class="stat">
+                    <div class="num">20</div>
+                    <div class="lbl">Departments</div>
+                    <div class="note">Each led by a head of department</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DIRECTORY ============ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="filter-bar">
+                <form id="staffForm" class="filter-row">
+                    <div class="filter-field" style="flex:2 1 320px;">
+                        <label for="staffSearch">Search staff</label>
+                        <input type="search" id="staffSearch" placeholder="Name, qualification, specialisation or duty">
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="staffKind">Category</label>
+                        <select id="staffKind">
+                            <option value="">Academic and non-teaching</option>
+                            <option value="Academic">Academic staff only</option>
+                            <option value="Non-Teaching">Non-teaching staff only</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="staffSchool">School or unit</label>
+                        <select id="staffSchool">
+                            <option value="">All schools and units</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="staffUnit">Department or unit</label>
+                        <select id="staffUnit">
+                            <option value="">All departments and units</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <button type="submit" class="btn btn-green btn-block">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </button>
+                    </div>
+                </form>
+
+                <p class="result-count" id="staffCount" style="margin:18px 0 0;"></p>
+            </div>
+
+            <div class="grid grid-3" id="staffList"></div>
+        </div>
+    </section>
+
+    <!-- ============ RANKING STRUCTURE ============ -->
+    <section class="section cream">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Career Structure</p>
+                <h2>Academic Ranks and Administrative Cadres</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Academic Cadre</h3>
+                    <ul class="tick-list" style="margin-top:14px;">
+                        <li><strong>Professor</strong> &mdash; highest academic rank; appointed on sustained scholarly contribution</li>
+                        <li><strong>Reader</strong> &mdash; senior research specialist with national recognition</li>
+                        <li><strong>Senior Lecturer</strong> &mdash; experienced teacher and active researcher</li>
+                        <li><strong>Lecturer I</strong> &mdash; full teacher with independent teaching responsibility</li>
+                        <li><strong>Lecturer II</strong> &mdash; entry level for freshly qualified graduates</li>
+                        <li><strong>Graduate Assistant</strong> &mdash; teaching and research support during postgraduate study</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Non-Teaching Cadre</h3>
+                    <ul class="tick-list" style="margin-top:14px;">
+                        <li><strong>Senior Management</strong> &mdash; Registrar, Bursar, Provost, Librarians, Directors</li>
+                        <li><strong>Professional</strong> &mdash; Engineers, Architects, Accountants, Auditors, Librarians, Counselors</li>
+                        <li><strong>Administrative</strong> &mdash; Senior Administrative Officer down to Clerical Officer</li>
+                        <li><strong>Technical</strong> &mdash; Technologist, Technician, Laboratory Attendant, Craftsperson</li>
+                        <li><strong>Support</strong> &mdash; Driver, Store Keeper, Cleaner, Gardener</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <a href="structure.html" class="btn btn-green">
+                    <i class="fa-solid fa-sitemap"></i> See the Administrative Structure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ JOBS ============ -->
+    <section class="section">
+        <div class="container split reverse">
+            <div>
+                <p class="eyebrow">Work With Us</p>
+                <h2>Vacancies and Career Opportunities</h2>
+                <p style="margin-top:16px;">
+                    The University recruits academic and non-teaching staff regularly. Vacancies are
+                    advertised in two national newspapers, on the University notice board and on this
+                    website.
+                </p>
+                <ul class="check-list" style="margin-top:22px;">
+                    <li>Academic positions: Professor, Reader, Senior Lecturer, Lecturer I and II.</li>
+                    <li>Professional positions: engineers, architects, accountants, librarians, ICT specialists.</li>
+                    <li>Administrative and technical positions in every directorate and central unit.</li>
+                    <li>Graduate assistant opportunities for candidates pursuing a postgraduate degree.</li>
+                </ul>
+                <a href="contact.html" class="btn btn-green" style="margin-top:26px;">
+                    <i class="fa-solid fa-briefcase"></i> Contact the Human Resources Directorate
+                </a>
+            </div>
+            <div class="split-media reveal">
+                <img src="images/research-office.jpg" alt="University office">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <h2>Need to Speak to a Department?</h2>
+            <p>Use the contact page to reach the Registrar, the Bursary, the Admissions Office or any central unit of the University.</p>
+            <div class="hero-actions">
+                <a href="contact.html" class="btn btn-gold">Contact Us</a>
+                <a href="structure.html" class="btn btn-ghost">Administrative Structure</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <img src="images/logo.svg" alt="">
+                    <span>
+                        <strong>University of Ifewara</strong>
+                        <small>Osun State &middot; Nigeria</small>
+                    </span>
+                </div>
+                <p>A university of technology driving innovation, industrialisation and sustainable development in Africa.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Schools</h4>
+                <a href="schools.html#scs">School of Sciences</a>
+                <a href="schools.html#sag">School of Agriculture</a>
+                <a href="schools.html#sit">School of Information Technology</a>
+                <a href="schools.html#sen">School of Environmental Studies</a>
+                <a href="schools.html#seg">School of Engineering</a>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="about.html">About the University</a>
+                <a href="programmes.html">Academic Programmes</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="structure.html">Administrative Structure</a>
+                <a href="staff.html">Staff Directory</a>
+                <a href="campus.html">Campus &amp; Facilities</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div>
+                <h4>Students</h4>
+                <a href="portal/login.html">Student Portal</a>
+                <a href="portal/dashboard.html">Course Registration</a>
+                <a href="admissions.html#fees">Fees and Payments</a>
+                <a href="portal/login.html#track">Track Application</a>
+                <a href="campus.html">Accommodation</a>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i><span>Ifewara Campus,<br>Osun State, Nigeria</span></li>
+                    <li><i class="fa-solid fa-phone"></i><span>+234 803 445 5800</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span>info@unifewara.edu.ng</span></li>
+                    <li><i class="fa-solid fa-user-graduate"></i><span>admissions@unifewara.edu.ng</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2026</span> University of Ifewara, Osun State, Nigeria. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+                <a href="#">Terms of Use</a> &nbsp;|&nbsp;
+                <a href="#">Accessibility</a> &nbsp;|&nbsp;
+                <a href="#">NUC Accredited</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="whatsapp" id="whatsappBtn" aria-label="Enquire on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

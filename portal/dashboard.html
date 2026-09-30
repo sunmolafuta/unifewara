@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | UNIFEWARA Student Portal</title>
+<meta name="description" content="University of Ifewara student portal dashboard: course registration, results, fees, hostel, library, documents and application tracking.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="portal.css">
+</head>
+<body class="portal-body">
+
+<div class="portal-layout">
+
+    <!-- ============ sidebar ============ -->
+    <aside class="portal-side" id="portalSide"></aside>
+    <div class="side-scrim" id="sideScrim"></div>
+
+    <!-- ============ main ============ -->
+    <div class="portal-main">
+        <header class="portal-top">
+            <button type="button" class="top-icon menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div>
+                <p class="crumb" id="topCrumb">Overview</p>
+                <h1 id="topTitle">Dashboard</h1>
+            </div>
+
+            <div class="top-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="topSearchInput" placeholder="Search pages, courses, notices…" autocomplete="off" aria-label="Search the portal">
+                <div class="search-pop" id="topSearchPop"></div>
+            </div>
+
+            <span class="top-session">Session <b>2025/2026</b></span>
+
+            <button type="button" class="top-icon" id="topBell" aria-label="Announcements" title="Announcements">
+                <i class="fa-solid fa-bell"></i>
+                <span class="dot"></span>
+            </button>
+
+            <a class="top-icon" href="../index.html" aria-label="University website" title="University website">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <button type="button" class="top-icon" id="topHelp" aria-label="Profile and settings" title="Profile and settings">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </header>
+
+        <main class="portal-content" id="portalView"></main>
+    </div>
+</div>
+
+<noscript>
+    <div style="padding:26px">
+        <h1>JavaScript is required</h1>
+        <p style="margin-top:8px">The University of Ifewara student portal renders your courses, results and fees in the browser. Please enable JavaScript and reload this page.</p>
+        <p style="margin-top:12px"><a href="../index.html">Return to the University of Ifewara website</a></p>
+    </div>
+</noscript>
+
+<script src="../data.js"></script>
+<script src="portal-data.js"></script>
+<script src="portal-store.js"></script>
+<script src="portal-app.js"></script>
+</body>
+</html>
